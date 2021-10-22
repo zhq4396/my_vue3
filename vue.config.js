@@ -19,21 +19,21 @@ module.exports = {
             }
         }
     },
-    devServer: {
-        host: 'localhost',
-        port: 3000,
-        https: false,
-        hotOnly: false,
-        proxy: {
-            '/api': {
-                target: "https://api.xwhx.top/",
-                changeOrigin: true,
-                secure: false,
-                pathRewrite: {
-                    "^/api": ""
-                }
-            },
-        }
+    // devServer: {
+    //     host: 'localhost',
+    //     port: 3000,
+    //     https: false,
+    //     hotOnly: false,
+    //     proxy: {
+    //         '/api': {
+    //             target: "https://api.xwhx.top/",
+    //             changeOrigin: true,
+    //             secure: false,
+    //             pathRewrite: {
+    //                 "^/api": ""
+    //             }
+    //         },
+    //     }
 
-    }
+    // }
 }

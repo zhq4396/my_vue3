@@ -20,13 +20,13 @@ module.exports = {
         }
     },
     devServer: {
-        host: '0.0.0.0',
+        host: 'localhost',
         port: 3000,
         https: false,
         hotOnly: false,
         proxy: {
             '/api': {
-                target: "http://app.rmsdmedia.com",
+                target: "https://api.xwhx.top/",
                 changeOrigin: true,
                 secure: false,
                 pathRewrite: {
